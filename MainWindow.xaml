@@ -44,7 +44,7 @@
                     <TextBox MaxLength="2" Width="30" FontSize="20"  x:Name="SecondTextBox">11</TextBox>
                     <Button Content="GO" Margin="5, 0"></Button>
                 </StackPanel>
-                <Label FontSize="10" x:Name="ErrorTextBox" Content="参照してファイルを選択するか、コピペしてコメントファイルのパスを入力してください"/>
+                <Label FontSize="10" x:Name="DetailLabel" Content="参照してファイルを選択するか、コピペしてコメントファイルのパスを入力してください"/>
             </StackPanel>
 
             
@@ -55,12 +55,11 @@
                         <GridViewColumn x:Name="GridViewColumn1" DisplayMemberBinding="{Binding Number}" Header="No" Width="60"/>
                         <GridViewColumn x:Name="GridViewColumn2" DisplayMemberBinding="{Binding Id}" Header="ID" Width="100"/>
                         <GridViewColumn x:Name="GridViewColumn3" DisplayMemberBinding="{Binding Comment}" Header="コメント" Width="300"/>
+                        <GridViewColumn x:Name="GridViewColumn4" DisplayMemberBinding="{Binding Time}" Header="時間" Width="300"/>
                     </GridView>
                 </ListView.View>
             </ListView>
             
         </DockPanel>
-        
-        
     </Grid>
 </Window>
